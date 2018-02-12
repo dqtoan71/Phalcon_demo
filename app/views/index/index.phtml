@@ -1,0 +1,11 @@
+<?php
+if ($this->session->has('user_id')) {
+    echo "Welcome: ".$user_id = $this->session->get('user_id');
+    echo $this->tag->linkTo(
+        "index/logout",
+        ", logout"
+    );
+}
+?>
+<h1>Template Index</h1>
+
